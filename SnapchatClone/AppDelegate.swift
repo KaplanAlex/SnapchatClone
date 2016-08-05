@@ -8,7 +8,9 @@
 
 import UIKit
 import CoreData
+import Firebase
 
+@available(iOS 10.0, *)
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -17,6 +19,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        FIRApp.configure()
+        
+//        let pageController = UIPageControl.appearance()
+//        pageController.pageIndicatorTintColor = UIColor.lightGray()
+//        pageController.currentPageIndicatorTintColor = UIColor.black()
+//        pageController.backgroundColor = UIColor.clear()
+        
         return true
     }
 
